@@ -40,5 +40,7 @@ void loop() {
   if (Serial.available() > 0) {
     String name = Serial.readStringUntil('\n');
     String presetName = Serial.readStringUntil('\n');
+
+    switchPresets(presetName);
   }
 }
