@@ -19,3 +19,6 @@ def index():
         serialPort.write(name)
         serialPort.write(preset_name)
 
+
+if __name__ == "__main__":
+    app.run()
